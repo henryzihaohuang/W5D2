@@ -38,7 +38,7 @@ def per_capita_gdp
   execute(<<-SQL)
 
   SELECT 
-    name, gdp
+    name, gdp/population
   FROM
     countries
   WHERE
